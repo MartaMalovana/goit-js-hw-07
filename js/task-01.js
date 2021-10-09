@@ -1,12 +1,12 @@
-const categoriesList = document.querySelectorAll('.item');
+const categoriesListEl = document.querySelectorAll('.item');
 
 const getCategoriesList = function () {
-    console.log(`В списке ${categoriesList.length} категории.`);
+    console.log(`В списке ${categoriesListEl.length} категории.`);
 };
 // getCategoriesList();
 
 const getCategoriesTitlesAndQuantityOfElements = function () {
-    [...categoriesList].map(el => {
+    [...categoriesListEl].map(el => {
   return console.log(`Категория: ${el.firstElementChild.textContent}
 Количество элементов: ${el.lastElementChild.children.length}`);
   });

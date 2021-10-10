@@ -18,11 +18,14 @@ const images = [
     const galleryElements = [];
     images.map(image => {
         const galleryElement = document.createElement('li');
-        galleryElement.insertAdjacentHTML("beforeend", `<img src=${image.url} alt=${image.alt} width=150px;></a>`);
+        galleryElement.insertAdjacentHTML("afterbegin", `<img src='${image.url}' alt='${image.alt}' width='250px;'></img>`);
         galleryElements.push(galleryElement);
-        console.log(galleryElement);
+        galleryList.style.display = 'flex';
+        galleryList.style.flexDirection = 'column';
+        galleryList.style.alignItems = 'center';
+        galleryList.style.listStyle = 'none';
     });
     galleryList.append(...galleryElements);
   };
 
-  createGalleryElements();
+//   createGalleryElements();

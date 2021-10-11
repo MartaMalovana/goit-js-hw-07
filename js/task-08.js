@@ -25,7 +25,9 @@ const onInputGetValue = function () {
 
         const destroyBoxes = function () {
             const newBoxesRef = document.querySelectorAll('.new-box');
-            // console.log(newBoxesRef);
+            for(let i=0; i<newBoxesRef.length; i+=1) {
+                newBoxesRef[i].remove();
+            };
         }
         buttonDestroy.addEventListener('click', destroyBoxes);
     };

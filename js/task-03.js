@@ -28,4 +28,4 @@ const images = [
     galleryList.append(...galleryElements);
   };
 
-//   createGalleryElements();
+  createGalleryElements();

@@ -16,7 +16,7 @@ const onInputGetValue = function () {
           const newBox = document.createElement('div');
           newBox.style.width = (30+10*i) + "px";
           newBox.style.height = (30+10*i) + "px";
-          newBox.style.border = `1px solid ${randomColor()}`;
+          newBox.style.backgroundColor = `${randomColor()}`;
           newBox.style.margin = '10px';
           newBox.classList.add('new-box');
           boxesArray.push(newBox);

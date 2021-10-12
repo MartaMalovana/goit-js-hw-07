@@ -3,7 +3,7 @@ const categoriesListEl = document.querySelectorAll('.item');
 const getCategoriesList = function () {
     console.log(`В списке ${categoriesListEl.length} категории.`);
 };
-// getCategoriesList();
+getCategoriesList();
 
 const getCategoriesTitlesAndQuantityOfElements = function () {
     [...categoriesListEl].map(el => {
@@ -11,4 +11,4 @@ const getCategoriesTitlesAndQuantityOfElements = function () {
 Количество элементов: ${el.lastElementChild.children.length}`);
   });
 };
-// getCategoriesTitlesAndQuantityOfElements();
+getCategoriesTitlesAndQuantityOfElements();
